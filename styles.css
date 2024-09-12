@@ -1,0 +1,405 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 16px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('images/parking.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Add background to make nav readable */
+}
+
+.logo img {
+    height: 80px; /* Adjust logo size */
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+.sign-in a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff4081;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.sign-in a:hover {
+    background-color: #e91e63;
+}
+
+/* Hero Content */
+.content {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn.demo-btn {
+    background-color: #1e88e5;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Form Container */
+.container {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Add transparency to blend with the background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for contrast */
+    background-image: url('background9.jpg'); /* Path to the uploaded background image */
+    background-size: cover;
+    background-position:initial;
+    background-repeat: no-repeat;
+    color: white; /* Text color for contrast */
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack forms vertically */
+    gap: 20px; /* Space between each form */
+}
+
+/* Form Box */
+.form-box {
+    background-color: rgba(21, 62, 107, 0.551); /* Semi-transparent background to improve readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(47, 86, 141, 0.1);
+    width: 100%; /* Make each form take the full width of the container */
+    color: white; /* Text color for contrast */
+}
+
+/* Form Elements */
+.form-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #95b9df; /* White text for better readability */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3e8de2; /* Light text color */
+    font-weight: bolder;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: rgba(103, 141, 152, 0.2); /* Semi-transparent input background */
+    color: rgb(234, 151, 151); /* White input text */
+}
+
+/* Report Section with Background */
+
+#report-display {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: 300px;
+    overflow-y: auto;
+    border: 2px solid #800080;
+    font-size: 18px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: left;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Report Section with Background */
+.report-container {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent container background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for contrast */
+    margin-bottom: 40px;    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Report Section Header */
+.report-container h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Button Group for Reports */
+.report-container .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add spacing between buttons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.report-container .btn-group button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    margin: 10px 0; /* Space around buttons */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: 200px; /* Set a fixed width for uniformity */
+    text-transform: uppercase; /* Make the button text uppercase */
+}
+
+.report-container .btn-group button:hover {
+    background-color: #6ab7ff;
+}
+
+/* Report Display Box */
+#report-display {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: 300px;
+    overflow-y: auto;
+    border: 2px solid #800080;
+    font-size: 18px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: left;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design for Report Section */
+@media (max-width: 768px) {
+    .report-section h2 {
+        font-size: 24px;
+    }
+
+    .report-container .btn-group button {
+        width: 100%; /* Full width buttons on smaller screens */
+        padding: 12px;
+    }
+
+    #report-display {
+        height: auto;
+        max-width: 90%;
+    }
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #393d44;
+    color: #dfe1dd;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    color: #47a498;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.footer-section a {
+    color: #47a498;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-social .social-icon {
+    margin: 0 15px;
+    color: #dfe1dd;
+    font-size: 25px;
+}
+
+.footer-social .social-icon:hover {
+    color: #47a498;
+}
+
+.footer-bottom {
+    border-top: 1px solid #9fa0a1;
+        padding-top: 10px;
+    font-size: 0.9rem;
+    color: #9fa0a1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-box {
+        width: 100%;
+    }
+
+    #report-display {
+        height: 350px;
+        width: 95%;
+    }
+
+    .footer-section {
+        padding: 30px 0;
+    }
+
+    .footer-content {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #report-display {
+        height: auto;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+
+    .footer-social .social-icon {
+        font-size: 20px;
+    }
+}
+/* Message Box Styling */
+.message-box {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #007bff;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-box.error {
+    border-left: 5px solid #dc3545; /* Red border for errors */
+}
+
+.message-box.success {
+    border-left: 5px solid #28a745; /* Green border for success */
+}

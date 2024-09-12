@@ -1,0 +1,273 @@
+/* CSS Variables */
+:root {
+  --quill-gray: #dfe1dd;
+  --tuna: #393d44;
+  --ocean-green: #47a498;
+  --gray-chateau: #9fa0a1;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: var(--quill-gray);
+  background-color: #1d0033; /* Match the main theme */
+}
+
+/* About Content */
+header h1 {
+  font-size: 2.5rem;
+  color: var(--ocean-green);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--ocean-green);
+  margin-top: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: var(--quill-gray);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: var(--quill-gray);
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: var(--tuna);
+  color: var(--quill-gray);
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-section h4 {
+  color: var(--ocean-green);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  color: var(--quill-gray);
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.footer-section a {
+  color: var(--ocean-green);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social .social-icon {
+  margin: 0 15px;
+  color: var(--quill-gray);
+  font-size: 25px;
+}
+
+.footer-social .social-icon:hover {
+  color: var(--ocean-green);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--gray-chateau);
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: var(--gray-chateau);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-section {
+      padding: 30px 0;
+  }
+  
+  .footer-content {
+      padding: 0 20px;
+  }
+  
+  .footer-section h4 {
+      font-size: 1.3rem;
+  }
+
+  .footer-social .social-icon {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+      padding: 20px 0;
+  }
+
+  .footer-section h4 {
+      font-size: 1.2rem;
+  }
+  
+  .footer-section p {
+      font-size: 0.9rem;
+  }
+
+  .footer-social .social-icon {
+      font-size: 20px;
+  }
+}
+     
+
+
+
+
+
+
+  /* CSS Variables */
+  :root {
+    --quill-gray: #dfe1dd;
+    --tuna: #393d44;
+    --ocean-green: #47a498;
+    --gray-chateau: #9fa0a1;
+}
+
+/* Ensure the body takes full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area, will push footer to bottom */
+.content {
+    flex: 1;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: var(--tuna); /* Dark gray background */
+    color: var(--quill-gray); /* Light gray text */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%; /* Ensure full width */
+    padding: 40px 0;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    color: var(--ocean-green); /* Blue color for title */
+    font-size: 1.5rem; /* Increase title font size */
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: var(--quill-gray); /* Light gray for text */
+    margin: 8px 0; /* Adjust margins for spacing */
+    font-size: 1rem; /* Font size adjustment */
+}
+
+.footer-section a {
+    color: var(--ocean-green); /* Blue for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social .social-icon {
+    margin: 0 15px; /* Adjust icon spacing */
+    color: var(--quill-gray);
+    font-size: 25px; /* Icon size */
+    text-decoration: none;
+}
+
+.footer-social .social-icon:hover {
+    color: var(--ocean-green); /* Hover effect on icons */
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--gray-chateau); /* Light gray border */
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: var(--gray-chateau);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 30px 0;
+    }
+    
+    .footer-content {
+        padding: 0 20px;
+    }
+    
+    .footer-section h4 {
+        font-size: 1.3rem;
+    }
+
+    .footer-social .social-icon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+
+    .footer-social .social-icon {
+        font-size: 20px;
+    }
+}

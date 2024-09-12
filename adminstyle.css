@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Font change for modern look */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c9d6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('admin.jpg')repeat;
+    background-size: cover;
+    background-position: center;
+  
+ 
+ 
+ 
+ 
+ 
+}
+
+/* Container for the Dashboard */
+.dashboard-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for the dashboard area */
+  padding: 2rem;
+  border: 4px solid rgba(148, 11, 11, 0.5);
+  background: transparent;
+  backdrop-filter: blur(5px);
+
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for a modern floating effect */
+  color: #f9e8e8; /* Text color */
+}
+
+/* Table Styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background-color: #0077cc; /* Dark blue background for table headers */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+  text-transform: uppercase;
+
+  
+}
+
+.dashboard-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for alternating rows */
+  background: transparent;
+
+}
+
+.dashboard-table td {
+  background-color: #fff; /* White background for table data */
+    background: transparent;
+
+}
+
+/* Action Links Styling */
+.action-links a {
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-approve {
+  background-color: #4caf50; /* Green for Approve button */
+}
+
+.btn-approve:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-reject {
+  background-color: #f44336; /* Red for Reject button */
+}
+
+.btn-reject:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.btn-edit {
+  background-color: #2196f3; /* Blue for Edit button */
+}
+
+.btn-edit:hover {
+  background-color: #1e88e5; /* Darker blue on hover */
+}
+
+/* Button to go to Home Page */
+.btn-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Light blue for Home button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+      width: 95%;
+      padding: 1rem;
+  }
+
+  .dashboard-table th, .dashboard-table td {
+      padding: 10px;
+  }
+
+  .btn-home {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}

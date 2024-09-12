@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #c9d6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('background9.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Main container for the form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 20px;
+  background: transparent;
+}
+
+/* Form box styling */
+.form-box {
+  background-color: rgba(255, 255, 255, 0.1); /* More transparent background */
+  padding: 2rem;
+  justify-content: center;
+  backdrop-filter: blur(8px); /* Blurred background effect */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+/* Title styling */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(125, 125, 235); /* Matching color */
+  margin-bottom: 20px;
+  text-align: center;
+  display: block; /* Ensures it's above the form */
+}
+
+/* Input field container styling */
+.inputbox {
+  position: relative;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+/* Styling for the input and select fields */
+.inputbox input, .inputbox select {
+  width: 100%;
+  padding: 10px 15px;
+  background: transparent; /* Fully transparent input background */
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Soft border */
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: rgb(142, 6, 6); /* Keep the text color white for visibility */
+  transition: border-bottom 0.3s ease;
+}
+
+/* Placeholder styling */
+.inputbox input::placeholder {
+  color: rgba(3, 0, 0, 0.5); /* Lighter placeholder */
+}
+
+/* Label positioning and animation */
+.inputbox label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease;
+  color: rgba(181, 29, 29, 0.7); /* Transparent label color */
+}
+
+/* Floating label effect when input is focused or filled */
+.inputbox input:focus ~ label,
+.inputbox input:not(:placeholder-shown) ~ label,
+.inputbox select:focus ~ label,
+.inputbox select:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+  font-size: bold;
+  color: rgb(125, 125, 235); /* Green highlight for focus */
+}
+
+/* Input focus effect */
+.inputbox input:focus {
+  border-bottom: 2px solid #a4be25; /* Stronger border on focus */
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
